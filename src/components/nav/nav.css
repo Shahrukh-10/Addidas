@@ -1,0 +1,130 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: var(--text-colorSecondary); */
+  padding-top: 0.8rem;
+  position: relative;
+  /* margin-top: 0.8rem; */
+}
+
+.categoryLinks {
+  display: flex;
+  list-style: none;
+  margin: 0 0 0 3.12rem;
+}
+.categoryLinks li a {
+  /* color: var(--text-colorSecondary); */
+  text-decoration: none;
+  line-height: 20px;
+  font-family: var(--font-family);
+  cursor: pointer;
+  font-size: 1.28em;
+  margin-right: 2rem;
+
+  display: inline-block;
+  position: relative;
+}
+.categoryLinks li a:after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -5px;
+  left: -9px;
+  /* background-color: var(--text-colorSecondary); */
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+.categoryLinks li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 5px; */
+  align-items: center;
+  justify-content: end;
+  margin-right: 5rem;
+  position: relative;
+  top: 0.6rem;
+}
+.yourSneaker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.your {
+  font-size: 2em;
+  color: rgba(189, 189, 189, 0.5);
+  letter-spacing: 0.1em;
+}
+.sneaker {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: var(--font-family);
+  letter-spacing: 0.1em;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navLinks a {
+  /* color: var(--text-colorSecondary); */
+  margin-right: 3.125rem;
+  cursor: pointer;
+}
+.navMenu,
+.navMenuItems {
+  display: none;
+}
+@media screen and (max-width: 550px) {
+  .navMenu {
+    margin-right: 2.125rem;
+    display: block;
+  }
+  .navLinks {
+    display: none;
+  }
+  .categoryLinks {
+    display: none;
+  }
+  .nav {
+    margin-left: 2rem;
+  }
+  .logo {
+    flex-direction: row-reverse;
+    top: 0;
+  }
+  .your,
+  .sneaker {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+  .navMenuItems {
+    display: block;
+    position: absolute;
+    right: 1.8rem;
+    top: 3rem;
+    width: 6.5rem;
+    border-radius: 15px;
+    background-color: rgb(226, 153, 153);
+  }
+  .navMenuItems li {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0.7rem;
+    justify-content: start;
+    cursor: pointer;
+  }
+  .navMenuItems li a {
+    margin-right: 7px;
+    /* color: var(--text-colorSecondary); */
+  }
+}
