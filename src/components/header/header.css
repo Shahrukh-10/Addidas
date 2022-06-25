@@ -2,4 +2,74 @@
     /* background-color: rgba(18, 18, 18, 1); */
     height: 100vh;
     width: 100vw;
+    position: relative;
+    overflow: auto;
+}
+.descreption_product{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.header_sneaker{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1.875rem;
+line-height: 37px;
+letter-spacing: 0.03em;
+
+}
+.header_jordan{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3.75rem;
+line-height: 35px;
+}
+.header_product_color p{
+    font-family: 'Montserrat';
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+}
+.header_product-para{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+.para{
+    width: 461px;
+    margin-bottom: 1.25rem;
+}
+.main_header{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100vw;
+    align-items: center;
+    margin-top: 12.063rem;
+}
+
+.zero_one{
+    position: absolute;
+    right: 0;
+    top:482px;
+    z-index: -1;
+}
+@media screen and (max-width: 1675px) {
+    .main_header{
+        margin-left: 141px;
+        margin-right: 141px;
+        justify-content: space-evenly;
+    }
+    .header_image{
+        margin-right: 8.813rem;
+    }
 }

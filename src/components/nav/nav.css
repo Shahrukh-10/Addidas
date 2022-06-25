@@ -5,7 +5,8 @@
   /* color: var(--text-colorSecondary); */
   padding-top: 0.8rem;
   position: relative;
-  /* margin-top: 0.8rem; */
+  width: 100%;
+  height: 5.988rem;
 }
 
 .categoryLinks {
@@ -84,7 +85,46 @@
 .navMenuItems {
   display: none;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 739px) {
+  .navMenu {
+    margin-right: 2.125rem;
+    display: block;
+  }
+  .logo {
+    flex-direction: row-reverse;
+    top: 0;
+  }
+  .navLinks {
+    display: none;
+  }
+  .nav {
+    padding-left: 2rem;
+  }
+  .categoryLinks {
+    display: none;
+  }
+  .navMenuItems {
+    display: block;
+    position: absolute;
+    right: 1.8rem;
+    top: 4.5rem;
+    width: 6.5rem;
+    border-radius: 15px;
+    background-color: rgb(226, 153, 153);
+  }
+  .navMenuItems li {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0.7rem;
+    justify-content: start;
+    cursor: pointer;
+  }
+  .navMenuItems li a {
+    margin-right: 7px;
+    /* color: var(--text-colorSecondary); */
+  }
+}
+@media screen and (max-width: 945px) {
   .navMenu {
     margin-right: 2.125rem;
     display: block;
@@ -92,11 +132,41 @@
   .navLinks {
     display: none;
   }
+  .navMenuItems {
+    display: block;
+    position: absolute;
+    right: 1.8rem;
+    top: 4.5rem;
+    width: 6.5rem;
+    border-radius: 15px;
+    background-color: rgb(226, 153, 153);
+  }
+  .navMenuItems li {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0.7rem;
+    justify-content: start;
+    cursor: pointer;
+  }
+  .navMenuItems li a {
+    margin-right: 7px;
+    /* color: var(--text-colorSecondary); */
+  }
+}
+@media screen and (max-width: 550px) {
+  .navMenu {
+    margin-right: 2.125rem;
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+  }
   .categoryLinks {
     display: none;
   }
   .nav {
-    margin-left: 2rem;
+    padding-left: 2rem;
   }
   .logo {
     flex-direction: row-reverse;
@@ -111,7 +181,7 @@
     display: block;
     position: absolute;
     right: 1.8rem;
-    top: 3rem;
+    top: 4.5rem;
     width: 6.5rem;
     border-radius: 15px;
     background-color: rgb(226, 153, 153);
