@@ -59,8 +59,7 @@
 .zero_one {
   position: absolute;
   right: 0;
-  top: 482px;
-  z-index: -1;
+  top: 482px;z-index: 0;
 }
 .header_image div {
   display: none;
@@ -75,6 +74,7 @@
   }
   .header_image {
     margin-right: 8.813rem;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 1265px) {
@@ -85,6 +85,11 @@
   .header_image img {
     width: 30.875rem;
   }
+  .zero_one img{
+    position: absolute;
+    right: -379px;
+    top: -78px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .main_header {
@@ -92,6 +97,9 @@
   }
   .header_image img {
     width: 25.875rem;
+  }
+  .zero_one {
+    display: none;
   }
 }
 @media screen and (max-width: 900px) {
@@ -109,9 +117,7 @@
     flex-direction: column-reverse;
     margin: 0;
   }
-  .zero_one {
-    background-color: white;
-  }
+  
   .header_image div {
     display: block;
   }
