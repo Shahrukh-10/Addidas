@@ -38,6 +38,9 @@ const Header = () => {
       </div>
       <div className="header_image">
         <img src={LandingPageShoe} alt="Jordan" />
+        <div>
+        <img src={zeroone} alt="01" />
+        </div>
       </div>
       </div>
     </div>
