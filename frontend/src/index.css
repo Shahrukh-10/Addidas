@@ -1,0 +1,22 @@
+:root {
+  --font-family: "Montserrat";
+  --text-colorPrimary: #ffffff;
+  --text-colorSecondary: rgba(189, 189, 189, 1);
+
+  --dark--background: rgba(18, 18, 18, 1);
+  --light-background: rgba(255, 255, 255, 1);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

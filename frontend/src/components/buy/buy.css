@@ -1,0 +1,222 @@
+.buy {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.buy_mode {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.buy_mode > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-left: 2rem;
+
+  color: #ffffff;
+}
+
+.buy_price {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy_price > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.buy_price > button {
+  background: #ffffff;
+  border-radius: 17px;
+  padding: 1rem 6rem;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(18, 18, 18, 1);
+
+  color: #000000;
+}
+
+.buy_price > button:hover {
+  background: rgba(18, 18, 18, 1);
+  padding: 1rem 6rem;
+
+  border: 1px solid white;
+  color: #ffffff;
+}
+
+.buy_countryCode {
+  display: flex;
+  flex-direction: row;
+}
+
+.buy_countryCode > .IND {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  margin-right: 0.2rem;
+}
+
+.buy_countryCode > .EN {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #bdbdbd;
+}
+
+@media screen and (max-width: 1000px) {
+  .buy {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .buy_mode > p {
+    font-size: 16px;
+    margin-left: 0.5rem;
+  }
+
+  .buy_price > p {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .buy_price > button {
+    padding: 0.5rem 4rem;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .buy_countryCode > .IND {
+    font-size: 18px;
+  }
+
+  .buy_countryCode > .EN {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .buy {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .buy_countryCode {
+    display: none;
+  }
+
+  .buy_mode {
+    flex-direction: column;
+  }
+  .buy_mode > p {
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buy {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .buy_countryCode {
+    display: none;
+  }
+
+  .buy_mode {
+    flex-direction: column;
+  }
+  .buy_mode > p {
+    margin: 0.5rem 0;
+  }
+
+  .buy_price > p {
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height */
+    margin-bottom: 0.5rem;
+  }
+
+  .buy_price > button {
+    padding: 0rem 2rem;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .buy_mode {
+    flex-direction: column;
+    display: none;
+  }
+  .buy_mode > p {
+    margin: 0.5rem 0;
+  }
+
+  .buy_price{
+    margin: 0;
+  }
+
+  .buy_price > p {
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height */
+    margin-bottom: 0.5rem;
+  }
+
+  .buy_price > button {
+    padding: 0rem 2rem;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

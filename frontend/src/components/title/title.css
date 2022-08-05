@@ -1,0 +1,98 @@
+.title {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.title > h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.title > p {
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.01em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title > button {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+
+  outline: none;
+  background: rgba(18, 18, 18, 1);
+  color: #ffffff;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  margin-top: 2rem;
+  border-radius: 25px;
+}
+
+.title > button:hover {
+  border: 1px solid rgba(18, 18, 18, 1);
+  outline: none;
+  background: #ffffff;
+  color: rgba(18, 18, 18, 1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .title > h1 {
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: -0.02em;
+  }
+
+  .title > p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .title > button {
+    font-size: 14px;
+    line-height: 22px;
+
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    padding: 2rem;
+  }
+  .title > h1 {
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+  }
+
+  .title > p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .title > button {
+    font-size: 14px;
+    line-height: 22px;
+
+    padding: 0.5rem 2rem;
+  }
+}

@@ -1,0 +1,39 @@
+.collection{
+     margin-top: 4rem;
+     display: flex;flex-direction: column;
+     align-items: center;
+     width: 100%;
+
+}
+.collectionList{
+     display: flex;
+     list-style: none;
+     justify-content: space-evenly;
+     width: 100%;
+     padding-top: 4.2rem;
+     font-family: "Montserrat";
+     font-weight: bold;
+     font-size: larger;
+}
+.collectionList li {
+     cursor: pointer;
+}
+.collectionHeading{
+     font-family: "Montserrat";
+     font-weight: bold;
+}
+.collectionHeading span{
+     font-family: "Montserrat";
+     font-weight: bold;
+     color: #940808ed;
+}
+.collectionList :hover{
+     color: #b98111ed;
+}
+.collectionListShoes{
+     width: 70%;
+     display: flex;
+     justify-content: space-evenly;
+     /* background-color: blue; */
+     flex-wrap: wrap;
+}

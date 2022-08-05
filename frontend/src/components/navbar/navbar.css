@@ -1,0 +1,163 @@
+.navbar {
+  color: var(--text-colorPrimary);
+  display: flex;
+  margin: 0 5rem;
+  padding-top: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.navbar_category {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.navbar_category > p {
+  margin: 0 1rem;
+}
+
+.navbar_category > p > a {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar_category :nth-child(3) {
+  border-bottom: 1px solid white;
+}
+
+.navbar_nikeLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.navbar_nikeLogo > h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 0.5rem;
+}
+
+.navbar_nikeLogo > h3:before {
+  content: "YOUR";
+  color: rgba(189, 189, 189, 0.5);
+}
+
+.navbar_nikeLogo > img {
+  width: 72px;
+  height: 22px;
+}
+
+.navbar_phoneMenu {
+  display: none;
+}
+
+.icons,
+.navbar_phoneMenu {
+  width: 25px;
+  height: 22px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    color: var(--text-colorPrimary);
+    display: flex;
+    margin: 0 2rem;
+  }
+
+  .navbar_category {
+    margin-right: 1rem;
+  }
+
+  .navbar_category > p {
+    margin: 0 0.5rem;
+  }
+
+  .navbar_category > p > a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .navbar_nikeLogo > h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .navbar_nikeLogo > img {
+    width: 62px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .navbar_phoneMenu {
+    display: block;
+  }
+
+  .navbar_links {
+    display: none;
+  }
+
+  .navbar_category > p > a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .navbar_nikeLogo > h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .navbar_nikeLogo > img {
+    width: 48px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    margin: 0 1rem;
+  }
+
+  .navbar_category {
+    display: none;
+  }
+  .navbar_nikeLogo {
+    flex-direction: row-reverse;
+  }
+  .navbar_nikeLogo > img {
+    margin-right: 1rem;
+    width:32px;
+  }
+
+  .navbar_nikeLogo > h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

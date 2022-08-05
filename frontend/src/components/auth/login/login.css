@@ -1,0 +1,66 @@
+.login {
+  font-family: "Monsterrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.loginHeader {
+  background-image: url("../../../assets/login_background.jpg");
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerLogin {
+  width:280px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+}
+.innerLogin h1{
+  font-family : sans-serif;
+  margin-top: 5px;
+}
+.innerLogin label{
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight:700;
+}
+.innerLogin a{
+    font-size: 8px;
+    font-weight:700;
+    text-decoration: none;
+}
+.innerLogin button{
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-family: system-ui;
+    font-size: 12px;
+    height: 18px;
+}
+.receiveMail{
+    display: flex;
+    align-items: center;
+}
+.innerLogin input{
+    height: 30px;
+    border: none;
+    background-color: rgb(230, 226, 226);
+    border-radius: 2px;
+    padding-left: 10px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}

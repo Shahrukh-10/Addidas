@@ -1,0 +1,90 @@
+.offerings {
+  width: 100%;
+  background: #e2dddded;
+  padding: 3rem 6rem;
+}
+
+.offerings-details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.offerings-details > p{
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    margin:  2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerings-details > p > span{
+    font-size: 28px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    color: #940808ed;
+    margin:0 1rem;
+}
+
+.offering-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.offering-heading > h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.offering-heading > h1 > span {
+  color: #940808ed;
+}
+
+.offering-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:1500px) {
+    .offerings {
+        padding:3rem 2rem;
+      }
+}
+
+@media screen and (max-width:850px) {
+    .offerings {
+        padding:3rem 2rem;
+      }
+
+      .offerings-details{
+        margin-bottom: 2rem;
+      }
+
+      .offerings-details > p{
+        font-size: 16px;
+        margin: 0.5rem;
+    }
+
+    .offerings-details > p > span{
+        font-size: 20px;;
+        margin:0 0.5rem;
+    }
+
+    .offering-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+      }
+}

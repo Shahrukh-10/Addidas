@@ -1,0 +1,140 @@
+.shoeCard {
+  width: 380px;
+  height: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+
+.sell,
+.price,
+.cart,
+.favourite,
+.rating,
+.ratingValue,
+.name {
+  position: absolute;
+  cursor: pointer;
+  /* visibility: hidden; */
+  top: 0;
+}
+.shoeCard img {
+  width: 80%;
+  height: 80%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sell {
+  width: 72px;
+  height: 25px;
+  background-color: red;
+  top: 45px;
+  left: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.shoeCard:hover .sell{
+  visibility: visible;
+}
+.sell span {
+  font-family: "Montserrat";
+  font-size: smaller;
+  font-weight: bolder;
+  color: white;
+}
+.cart {
+  color: white;
+  top: 45px;  width: 29px;
+  left: 208px;
+  height: 29px;
+  border-radius: 35px;
+}
+.cart div {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.favourite {
+    color: white;
+    top: 45px;
+    width: 29px;
+    height: 29px;
+    left: 240px;
+
+    border-radius: 35px;
+  }
+  .favourite div {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+  }
+  .rating {
+    color: white;
+    top: 45px;
+    width: 29px;
+    height: 29px;
+    left: 292px;
+    visibility: hidden;
+
+    border-radius: 35px;
+  }
+  .rating div {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    color: red;
+  }
+  .ratingValue{
+    top: 50px;
+    font-family: 'Montserrat';
+    font-size: small;
+    color: white;
+    left: 272px;
+  }
+  .cart:hover{
+    background-color: white;
+    color: black;
+  }
+  .favourite:hover{
+    background-color: white;
+    color: black;
+  }
+  .sell:hover{
+    background-color: red;
+    color: white;
+  }
+
+  .sell span:hover{
+    background-color: red;
+  }
+  .price{
+    top: 223px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    text-decoration: underline;
+    color: white;
+
+  }
+  
+  .name{
+    top: 255px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  .name:hover{
+    font-size: 30px;
+  }
+  .shoeCard:hover .rating{
+    visibility: visible;
+  }
+  .shoeCard :hover {
+  background-color: black;
+}
