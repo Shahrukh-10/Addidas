@@ -64,3 +64,7 @@
     font-weight: bold;
     font-size: 10px;
 }
+.last{
+  display: flex;
+  justify-content: space-between;
+}

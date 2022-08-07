@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./login.css";
-import { useNavigate, Link } from "react-router-dom";
+import "./signup.css";
+import { useNavigate,Link } from "react-router-dom";
 
-const Login = () => {
+const Signup = () => {
   let navigate = useNavigate();
-  const [credentials, setCredentials] = useState({ email: "", password: "" });
+  const [credentials, setCredentials] = useState({username:"", email: "", password: "" });
   const host = "http://localhost:5000";
   const onChange = (e) => {
     setCredentials({
@@ -14,12 +14,13 @@ const Login = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${host}/api/auth/login`, {
+    const response = await fetch(`${host}/api/auth/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        username : credentials.username,
         email: credentials.email,
         password: credentials.password,
       }),
@@ -28,11 +29,11 @@ const Login = () => {
     if (json.success) {
       localStorage.setItem("token", json.token);
       localStorage.setItem("success", json.success);
-      alert("Logged In");
+      alert("Account created successfully ... ");
       navigate("/");
     } else {
-      alert("Login failed");
-      navigate("/login");
+      alert(json.error);
+      navigate("/signup");
     }
     console.log(json);
   };
@@ -41,7 +42,17 @@ const Login = () => {
       <div className="loginHeader">
         <form onSubmit={handleSubmit}>
           <div className="innerLogin">
-            <h1>Login</h1>
+            <h1>Create Account</h1>
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              value={credentials.username}
+              onChange={onChange}
+              required
+              minLength={5}
+              name="username"
+              id="username"
+            />
             <br />
             <label htmlFor="email">EMAIL</label>
             <input
@@ -56,24 +67,26 @@ const Login = () => {
             <label htmlFor="password">PASSWORD</label>
             <input
               type="password"
+              minLength={8}
               required
               name="password"
               id="password"
               value={credentials.password}
               onChange={onChange}
             />
-           <br/>
-            <br />
+            <div className="receiveMail">
+              <input
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+                value="subscribe"
+              />
+              &nbsp;
+              <label htmlFor="subscribe"> Want to receive mail ?</label>
+            </div>
             <button type="submit">Login</button>
             <br />
-            <div className="last">
-              <div className="forgotPassword">
-                <Link to="/forgotPassword">Forgot Password ?</Link>
-              </div>
-              <div className="signup">
-                <Link to="/signup">Create Account</Link>
-              </div>
-            </div>
+            <Link to="/login">Already have account ? Login here :)</Link>
           </div>
         </form>
       </div>
@@ -81,4 +94,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

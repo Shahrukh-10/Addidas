@@ -15,6 +15,8 @@ import Home from "./Home";
 import { Routes, Route } from "react-router-dom"
 
 import Login from "./components/auth/login/Login";
+import Signup from "./components/auth/signup/Signup";
+import FullCollection from "./components/fullCollection/FullCollection";
 
 function App() {
   
@@ -25,8 +27,10 @@ function App() {
         
 
       <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="login" element={ <Login/> } />
+        <Route exact path="/" element={ <Home/> } />
+        <Route exact path="login" element={ <Login/> } />
+        <Route exact path="signup" element={ <Signup/> } />
+        <Route exact path="collection" element={ <FullCollection/> } />
       </Routes>
     </div>
   );
