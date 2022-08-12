@@ -31,8 +31,7 @@ const FullCollection = () => {
         :
       <div className="listCollection">
       {shoeList.map((shoe) => {
-        {/* return <Noteitem key={note._id} updateNote={updateNote} showAlert={showAlert} note={note} />; */}
-        return <ShoeDisplay key={Math.random()} shoeImage={shoes} name={shoe.shoeName} price={100} />
+        return <ShoeDisplay key={shoe._id} shoeImage={shoes} name={shoe.shoeName} price={100} />
       })}
       </div>
       }
