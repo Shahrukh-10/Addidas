@@ -18,4 +18,18 @@ router.post("/addShoes",async(req,res) => {
     }
 });
 
+// GET ALL SHOES
+
+router.get("/getAll",async(req,res) => {
+    try{
+        const shoeList = await shoes.find();
+        res.status(200).send({shoeList,"success":true});
+    }
+    catch(error){
+        res.status(500).send(error.message)
+    }
+});
+
+
+
 module.exports = router;

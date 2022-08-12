@@ -7,8 +7,8 @@ import {FiShoppingBag} from 'react-icons/fi';
 function SideNaveBar(props) {
     return (
       
-            <div id="mySidenav" class="sidenav">
-                <button class="closebtn" onClick={props.displayNavStatus}>&times;</button>
+            <div id="mySidenav" className="sidenav">
+                <button className="closebtn" onClick={props.displayNavStatus}>&times;</button>
                 <a href="../"><CgProfile className='icons' />Profile</a>
                 <a href="../"><FiSearch className='icons' />Search</a>
                 <a href="../"><FiShoppingBag className='icons' />Cart</a>

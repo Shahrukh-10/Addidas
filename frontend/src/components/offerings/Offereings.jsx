@@ -42,9 +42,15 @@ function Offereings() {
   return (
     <div className="offerings">
       <div className="offerings-details">
-        <p><span>20k+ </span> Orders Completed</p>
-        <p><span>5k+ </span> Regular Visits</p>
-        <p><span>15k+ </span> Happy Customers</p>
+        <p>
+          <span>20k+ </span> Orders Completed
+        </p>
+        <p>
+          <span>5k+ </span> Regular Visits
+        </p>
+        <p>
+          <span>15k+ </span> Happy Customers
+        </p>
       </div>
       <div className="offering-heading">
         <h1>
