@@ -17,6 +17,7 @@ import { Routes, Route } from "react-router-dom"
 import Login from "./components/auth/login/Login";
 import Signup from "./components/auth/signup/Signup";
 import FullCollection from "./components/fullCollection/FullCollection";
+import Error from "./components/error/Error";
 
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="login" element={ <Login/> } />
         <Route exact path="signup" element={ <Signup/> } />
         <Route exact path="collection" element={ <FullCollection/> } />
+        <Route exact path="*" element={ <Error/> } />
       </Routes>
     </div>
   );

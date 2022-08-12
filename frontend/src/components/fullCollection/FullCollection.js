@@ -25,7 +25,7 @@ const FullCollection = () => {
         <h1>Collections</h1>
       </div>
       {
-        shoeList.length == 0 ? <div className="center">
+        shoeList.length === 0 ? <div className="center">
           <p>Loading</p>
         </div>
         :
@@ -38,8 +38,6 @@ const FullCollection = () => {
     </div>
   );
 };
-const Sh = (props) =>{
-  <p>{props.shoeName}</p>
-}
+
 
 export default FullCollection;
