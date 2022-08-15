@@ -4,8 +4,10 @@ import { BsHeart } from "react-icons/bs";
 import { BsHeartFill } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
 import { useState } from "react";
+import {useNavigate} from 'react-router-dom';
 
 function ShoeDisplay(props) {
+  let navigate = useNavigate();
   function addToWishList() {
     setWishList(!wishlistAdded);
     console.log(wishlistAdded);
@@ -13,8 +15,13 @@ function ShoeDisplay(props) {
 
   const [wishlistAdded, setWishList] = useState(true);
 
+  const productPage = () => {
+    navigate("/product",{state:{id:props.id}})
+    
+  }
+
   return (
-    <div className="shoeDisplay_container">
+    <div className="shoeDisplay_container" onClick={()=>productPage()}>
       <div className="shoeDisplay_container-image">
         {wishlistAdded ? (
           <BsHeart

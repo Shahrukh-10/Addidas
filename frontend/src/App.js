@@ -18,6 +18,7 @@ import Login from "./components/auth/login/Login";
 import Signup from "./components/auth/signup/Signup";
 import FullCollection from "./components/fullCollection/FullCollection";
 import Error from "./components/error/Error";
+import ProductPage from "./components/productPage/ProductPage";
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="login" element={ <Login/> } />
         <Route exact path="signup" element={ <Signup/> } />
         <Route exact path="collection" element={ <FullCollection/> } />
+        <Route exact path="product" element={ <ProductPage/> } />
         <Route exact path="*" element={ <Error/> } />
       </Routes>
     </div>
